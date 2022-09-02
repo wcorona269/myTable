@@ -6,7 +6,6 @@ import { Link } from 'react-router-dom';
 
 
 const ListIcon = ({bookings, id, name, cuisines, neighborhood, price_range, icon, rating}) => {
-	// debugger;
 	const priceRange = (num) => {
 		if (num === 1) {
 			return	<span><span className="red-dollar">$</span><span className="gray-dollar">$$$</span></span>

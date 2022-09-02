@@ -29,7 +29,6 @@ const BookingShow = (props) => {
 	tentativeDate.setHours(23, 59, 59, 998)
 	const completed = (today > tentativeDate)
 
-	// debugger;
 	useEffect(() => {
 		window.scrollTo(0, 0)
 	})

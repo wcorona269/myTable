@@ -107,6 +107,7 @@ const BookingListItem = ({booking, completed}) => {
 						{DateDetails(booking.date, booking.time)}
 					</span>
 				</span>
+				{ completed && <Link id='review-link' to={`/review/create/${booking.rest_id}`}>Leave a review</Link>}
 			</div>
 		</Link>
 	)

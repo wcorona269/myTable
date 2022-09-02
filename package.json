@@ -12,7 +12,8 @@
     "watch": "webpack --watch --mode=development",
     "start": "webpack serve",
     "build": "NODE_ENV=production webpack",
-    "build-dev": "webpack"
+    "build-dev": "webpack",
+    "postinstall": "webpack"
   },
   "repository": {
     "type": "git",
@@ -59,5 +60,9 @@
     "css-loader": "^6.7.1",
     "style-loader": "^3.3.1",
     "webpack-dev-server": "^4.9.0"
+  },
+  "engines": {
+    "node": "16.14.0",
+    "npm": "8.3.1"
   }
 }

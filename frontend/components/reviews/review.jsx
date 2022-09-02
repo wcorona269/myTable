@@ -17,7 +17,7 @@ const ReviewsIndex = ({reviews}) => {
 					<p>New York Area</p>
 					<p>
 						<img src={`data:image/svg+xml;utf8,${icReview}`}/>
-						22 reviews
+						{Math.floor(Math.random() * 30)} reviews
 					</p>
 				</section>
 				<section className="review-data">

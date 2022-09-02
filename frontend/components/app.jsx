@@ -13,6 +13,7 @@ import BookingShow from './booking/show';
 import UpdateBooking from './booking/update';
 import SearchResultsContainer from './search/results';
 import RestIndexContainer from './restaurant/index';
+import ReviewForm from './reviews/create';
 import { Switch } from "react-router-dom";
 
 const App = () => (
@@ -31,6 +32,7 @@ const App = () => (
                         <ProtectedRoute path='/booking/:bookingId/modify' component={UpdateBooking}/>
                         <ProtectedRoute path='/booking/show/:bookingId/:time/:date' component={BookingShow}/>
                         <ProtectedRoute path="/booking/:restId/:date/:resTime/:party" component={BookingForm} />
+                        <ProtectedRoute path="/review/create/:restId" component={ReviewForm} />
                     </Switch>
                 </div>
             <Route path='/' component={Footer}/>
