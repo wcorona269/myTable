@@ -1,4 +1,5 @@
 class Api::BookingsController < ApplicationController
+	# bookings controller
 
 	def index
 		if user_id 
