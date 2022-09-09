@@ -14,9 +14,6 @@
  *= require_self
  */
 
- body {
-	font-family: BrandonText,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
-}
 
  @import "./reset.scss";
  @import "./scrollbar.scss";
@@ -40,3 +37,8 @@
  @import './index.scss';
  @import './review_form.scss';
  /* @import 'react-datepicker/dist/react-datepicker-cssmodules.css'; */
+
+
+ body {
+	font-family: BrandonText,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+}
