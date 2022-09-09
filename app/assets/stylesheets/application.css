@@ -10,11 +10,33 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
+ *= require reset
+ *= require scrollbar
+ *= require home
+ *= require colors
+ *= require form
+ *= require nav_bar
+ *= require searchbar
+ *= require categories
+ *= require footer
+ *= require rest_show
+ *= require gallery
+ *= require menu
+ *= require user_show
+ *= require booking_form
+ *= require booking_show
+ *= require delete_booking
+ *= require booking_update
+ *= require time_buttons
+ *= require index
+ *= require review_form
+
  *= require_tree .
  *= require_self
  */
 
 
+/* 
  @import "./reset.scss";
  @import "./scrollbar.scss";
  @import "./home.scss";
@@ -35,7 +57,7 @@
  @import './booking_update.scss';
  @import './time_buttons.scss';
  @import './index.scss';
- @import './review_form.scss';
+ @import './review_form.scss'; */
  /* @import 'react-datepicker/dist/react-datepicker-cssmodules.css'; */
 
 
