@@ -11,7 +11,9 @@ module.exports = {
   },
 
   
+  
   module: {
+    
     // loaders: 'babel-loader',
     rules: [
       {
@@ -26,7 +28,7 @@ module.exports = {
       },
       {
         test: /\.css$/i,
-        use: ["style-loader", "css-loader"],
+        use: ["style-loader", "css-loader", "sass-loader"],
       },
     ]
   },
@@ -37,7 +39,7 @@ module.exports = {
   //   hot: true,
   // },
   resolve: {
-    extensions: ['.js', '.jsx', '*', '.png'],
+    extensions: ['', '.js', '.jsx', '*', '.png', '.css'],
   },
 
   devServer: {
