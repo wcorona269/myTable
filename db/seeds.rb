@@ -64,12 +64,12 @@ rest1 = Restaurant.create!(
 # ]
 
 hearthpics = [
-	image_path('images/rest_pics/hearth/26504710.jpg'),
-	image_path('images/rest_pics/hearth/banner.png'),
-	image_path('images/rest_pics/hearth/26504732.jpg'),
-	image_path('images/rest_pics/hearth/26504723.jpg'),
-	image_path('images/rest_pics/hearth/26504722.jpg'),
-	image_path('images/rest_pics/hearth/26504715.jpg')
+	ActionController::Base.helpers.image_path('images/rest_pics/hearth/26504710.jpg'),
+	ActionController::Base.helpers.image_path('images/rest_pics/hearth/banner.png'),
+	ActionController::Base.helpers.image_path('images/rest_pics/hearth/26504732.jpg'),
+	ActionController::Base.helpers.image_path('images/rest_pics/hearth/26504723.jpg'),
+	ActionController::Base.helpers.image_path('images/rest_pics/hearth/26504722.jpg'),
+	ActionController::Base.helpers.image_path('images/rest_pics/hearth/26504715.jpg')
 ]
 
 hearthpics.each do |path, i|
