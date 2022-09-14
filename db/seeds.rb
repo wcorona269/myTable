@@ -54,13 +54,22 @@ rest1.banner.attach(
 	filename: 'hearth_banner.jpg'
 )
 
+# hearthpics = [
+# 	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/hearth/26504710.jpg',
+# 	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/hearth/banner.png',
+# 	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/hearth/26504732.jpg',
+# 	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/hearth/26504723.jpg',
+# 	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/hearth/26504722.jpg',
+# 	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/hearth/26504715.jpg'
+# ]
+
 hearthpics = [
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/hearth/26504710.jpg',
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/hearth/banner.png',
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/hearth/26504732.jpg',
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/hearth/26504723.jpg',
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/hearth/26504722.jpg',
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/hearth/26504715.jpg'
+	image_path('images/rest_pics/hearth/26504710.jpg'),
+	image_path('images/rest_pics/hearth/banner.png'),
+	image_path('images/rest_pics/hearth/26504732.jpg'),
+	image_path('images/rest_pics/hearth/26504723.jpg'),
+	image_path('images/rest_pics/hearth/26504722.jpg'),
+	image_path('images/rest_pics/hearth/26504715.jpg')
 ]
 
 hearthpics.each do |path, i|
