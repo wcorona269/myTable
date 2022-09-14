@@ -47,12 +47,12 @@ rest1 = Restaurant.create!(
 	phone: 6466021300
 )
 
-rest1.icon.attach(io: File.open('/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/hearth/banner.png'), filename: 'hearth-icon.jpg')
+# rest1.icon.attach(io: File.open('/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/hearth/banner.png'), filename: 'hearth-icon.jpg')
 
-rest1.banner.attach(
-	io: File.open('/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/hearth/banner.png'),
-	filename: 'hearth_banner.jpg'
-)
+# rest1.banner.attach(
+# 	io: File.open('/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/hearth/banner.png'),
+# 	filename: 'hearth_banner.jpg'
+# )
 
 # hearthpics = [
 # 	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/hearth/26504710.jpg',
