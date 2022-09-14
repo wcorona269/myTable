@@ -37,4 +37,4 @@ npm-debug.log
 /config/application.yml
 
 # ignore rest photo files
-/app/assets/images/rest_pics
+# /app/assets/images/rest_pics
