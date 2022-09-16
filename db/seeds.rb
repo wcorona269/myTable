@@ -48,29 +48,20 @@ rest1 = Restaurant.create!(
 	phone: 6466021300
 )
 
-# rest1.icon.attach(io: File.open('/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/hearth/banner.png'), filename: 'hearth-icon.jpg')
+rest1.icon.attach(io: open('https://my-table-pro.s3.amazonaws.com/rest_pics/hearth/banner.png'), filename: 'hearth-icon.jpg')
 
-# rest1.banner.attach(
-# 	io: File.open('/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/hearth/banner.png'),
-# 	filename: 'hearth_banner.jpg'
-# )
-
-# hearthpics = [
-# 	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/hearth/26504710.jpg',
-# 	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/hearth/banner.png',
-# 	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/hearth/26504732.jpg',
-# 	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/hearth/26504723.jpg',
-# 	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/hearth/26504722.jpg',
-# 	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/hearth/26504715.jpg'
-# ]
+rest1.banner.attach(
+	io: open('https://my-table-pro.s3.amazonaws.com/rest_pics/hearth/banner.png'),
+	filename: 'hearth_banner.jpg'
+)
 
 hearthpics = [
-	'images/rest_pics/hearth/26504710.jpg'),
-	'images/rest_pics/hearth/banner.png'),
-	'images/rest_pics/hearth/26504732.jpg'),
-	'images/rest_pics/hearth/26504723.jpg'),
-	'images/rest_pics/hearth/26504722.jpg'),
-	'images/rest_pics/hearth/26504715.jpg')
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/hearth/26504710.jpg',
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/hearth/banner.png',
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/hearth/26504732.jpg',
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/hearth/26504723.jpg',
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/hearth/26504722.jpg',
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/hearth/26504715.jpg'
 ]
 
 hearthpics.each do |path, i|
@@ -93,26 +84,26 @@ rest2 = Restaurant.create!(
 )
 
 rest2.icon.attach(
-	io: File.open('/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/carmines/47035289.jpg'),
+	io: open('https://my-table-pro.s3.amazonaws.com/rest_pics/carmines/47035289.jpg'),
 	filename: 'carmines-icon.jpg')
 
 rest2.banner.attach(
-	io: File.open('/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/carmines/banner.jpg'),
+	io: open('https://my-table-pro.s3.amazonaws.com/rest_pics/carmines/banner.jpg'),
 	filename: 'carmines_banner.jpg'
 )
 
 carmines = [
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/carmines/26533379.jpeg',
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/carmines/47035289.jpg',
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/carmines/banner.jpg',
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/carmines/carmines-atlantic-city-lobster.jpeg',
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/carmines/carmines-general-og.jpeg',
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/carmines/icon.jpeg',
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/carmines/image.jpeg'
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/carmines/26533379.jpeg',
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/carmines/47035289.jpg',
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/carmines/banner.jpg',
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/carmines/carmines-atlantic-city-lobster.jpeg',
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/carmines/carmines-general-og.jpeg',
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/carmines/icon.jpeg',
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/carmines/image.jpeg'
 ]
 
 carmines.each do |path, i|
-		file = File.open(path)
+		file = open(path)
 		rest2.photos.attach(io: file, filename: "carmines_#{i}.jpeg")
 end
 
@@ -132,27 +123,27 @@ rest3 = Restaurant.create!(
 )
 
 rest3.icon.attach(
-	io: File.open('/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/bills/banner.jpeg'),
+	io: open('https://my-table-pro.s3.amazonaws.com/rest_pics/bills/banner.jpeg'),
 	filename: 'bills-icon.jpg')
 
 rest3.banner.attach(
-	io: File.open('/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/bills/banner.jpeg'),
+	io: open('https://my-table-pro.s3.amazonaws.com/rest_pics/bills/banner.jpeg'),
 	filename: 'bills_banner.jpg'
 )
 
 bills = [
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/bills/29390716.jpg',
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/bills/29390721.jpg',
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/bills/banner.jpeg',
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/bills/bills1.jpg',
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/bills/bills2.jpg',
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/bills/image.jpg',
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/bills/outside.png',
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/bills/ProjectImage.jpg'
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/bills/29390716.jpg',
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/bills/29390721.jpg',
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/bills/banner.jpeg',
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/bills/bills1.jpg',
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/bills/bills2.jpg',
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/bills/image.jpg',
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/bills/outside.png',
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/bills/ProjectImage.jpg'
 ]
 
 bills.each do |path, i|
-		file = File.open(path)
+		file = open(path)
 		rest3.photos.attach(io: file, filename: "bills#{i}.jpeg")
 end
 
@@ -168,27 +159,27 @@ rest4 = Restaurant.create!(
 
 
 rest4.icon.attach(
-	io: File.open('/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/centralpark/icon.jpeg'),
+	io: open('https://my-table-pro.s3.amazonaws.com/rest_pics/centralpark/icon.jpeg'),
 	filename: 'centralpark-icon.jpg')
 
 rest4.banner.attach(
-	io: File.open('/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/centralpark/banner.jpeg'),
+	io: open('https://my-table-pro.s3.amazonaws.com/rest_pics/centralpark/banner.jpeg'),
 	filename: 'centralpark_banner.jpg'
 )
 
 centralpark = [
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/centralpark/41764395.jpg',
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/centralpark/41764396.jpg',
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/centralpark/41764397.jpg',
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/centralpark/41764398.jpg',
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/centralpark/41764399.jpg',
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/centralpark/41764400.jpg',
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/centralpark/banner.jpeg',
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/centralpark/boathouse.jpeg'
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/centralpark/41764395.jpg',
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/centralpark/41764396.jpg',
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/centralpark/41764397.jpg',
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/centralpark/41764398.jpg',
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/centralpark/41764399.jpg',
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/centralpark/41764400.jpg',
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/centralpark/banner.jpeg',
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/centralpark/boathouse.jpeg'
 ]
 
 centralpark.each do |path, i|
-		file = File.open(path)
+		file = open(path)
 		rest4.photos.attach(io: file, filename: "cp_#{i}.jpeg")
 end
 
@@ -204,25 +195,25 @@ rest5 = Restaurant.create!(
 )
 
 rest5.icon.attach(
-	io: File.open('/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/lugers/icon.jpg'),
+	io: open('https://my-table-pro.s3.amazonaws.com/rest_pics/lugers/icon.jpg'),
 	filename: 'lugers-icon.jpg')
 
 rest5.banner.attach(
-	io: File.open('/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/lugers/banner.jpg'),
+	io: open('https://my-table-pro.s3.amazonaws.com/rest_pics/lugers/banner.jpg'),
 	filename: 'lugers_banner.jpg'
 )
 
 lugers = [
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/lugers/3T5D5092.jpg',
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/lugers/3T5D9775.jpg',
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/lugers/1200px-Peter_Luger_Steak_House_(Brooklyn,_New_York)_001_crop.jpg',
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/lugers/FINISHED-peter-luger-steakhouse-porterhouse-new-york.0.jpg',
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/lugers/peter_luger_steak_house_brooklyn_new_york_1_636211101076624432.jpg',
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/lugers/icon.jpg'
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/lugers/3T5D5092.jpg',
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/lugers/3T5D9775.jpg',
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/lugers/1200px-Peter_Luger_Steak_House_(Brooklyn,_New_York)_001_crop.jpg',
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/lugers/FINISHED-peter-luger-steakhouse-porterhouse-new-york.0.jpg',
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/lugers/peter_luger_steak_house_brooklyn_new_york_1_636211101076624432.jpg',
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/lugers/icon.jpg'
 ]
 
 lugers.each do |path, i|
-		file = File.open(path)
+		file = open(path)
 		rest5.photos.attach(io: file, filename: "lugers_#{i}.jpeg")
 end
 
@@ -237,26 +228,26 @@ rest6 = Restaurant.create!(
 )
 
 rest6.icon.attach(
-	io: File.open('/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/patsys/icon.jpg'),
+	io: open('https://my-table-pro.s3.amazonaws.com/rest_pics/patsys/icon.jpg'),
 	filename: 'patsys-icon.jpg'
 )
 
 rest6.banner.attach(
-	io: File.open('/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/patsys/banner.jpg'),
+	io: open('https://my-table-pro.s3.amazonaws.com/rest_pics/patsys/banner.jpg'),
 	filename: 'patsys_banner.jpg'
 )
 
 patsys = [
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/patsys/02 INT.jpg',
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/patsys/9869150afe394e64ab82fb628e9c7c5d.jpg',
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/patsys/icon.jpg',
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/patsys/IMG_0836.jpg',
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/patsys/KatePrevite_PatsysPizza_PlainCheese_5.jpg',
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/patsys/patsys-pizzeria-ht-mem-180510_hpMain_4x3_608.jpg'
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/patsys/02 INT.jpg',
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/patsys/9869150afe394e64ab82fb628e9c7c5d.jpg',
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/patsys/icon.jpg',
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/patsys/IMG_0836.jpg',
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/patsys/KatePrevite_PatsysPizza_PlainCheese_5.jpg',
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/patsys/patsys-pizzeria-ht-mem-180510_hpMain_4x3_608.jpg'
 ]
 
 patsys.each do |path, i|
-		file = File.open(path)
+		file = open(path)
 		rest6.photos.attach(io: file, filename: "patsys_#{i}.jpeg")
 end
 
@@ -274,27 +265,27 @@ rest7 = Restaurant.create!(
 )
 
 rest7.icon.attach(
-	io: File.open('/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/katz/icon.jpeg'),
+	io: open('https://my-table-pro.s3.amazonaws.com/rest_pics/katz/icon.jpeg'),
 	filename: 'katz-icon.jpg'
 )
 
 rest7.banner.attach(
-	io: File.open('/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/katz/banner.jpeg'),
+	io: open('https://my-table-pro.s3.amazonaws.com/rest_pics/katz/banner.jpeg'),
 	filename: 'katz_banner.jpg'
 )
 
 katz = [
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/katz/katzs_nonseasonal-min.jpeg',
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/katz/Katzs_Delicatessen.jpeg',
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/katz/katz-deli-hackensack-new-jersey.jpeg',
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/katz/Katzs_20Deli_20-_20pastrami_20autopsy_20shot.0.0.jpg',
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/katz/web_2_1.jpeg',
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/katz/banner.jpeg',
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/katz/icon.jpeg',
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/katz/katzs_nonseasonal-min.jpeg',
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/katz/Katzs_Delicatessen.jpeg',
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/katz/katz-deli-hackensack-new-jersey.jpeg',
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/katz/Katzs_20Deli_20-_20pastrami_20autopsy_20shot.0.0.jpg',
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/katz/web_2_1.jpeg',
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/katz/banner.jpeg',
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/katz/icon.jpeg',
 ]
 
 katz.each do |path, i|
-		file = File.open(path)
+		file = open(path)
 		rest7.photos.attach(io: file, filename: "katz_#{i}.jpeg")
 end
 
@@ -309,27 +300,27 @@ rest8 = Restaurant.create!(
 )
 
 rest8.icon.attach(
-	io: File.open('/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/lombardis/icon.jpeg'),
+	io: open('https://my-table-pro.s3.amazonaws.com/rest_pics/lombardis/icon.jpeg'),
 	filename: 'lombardis-icon.jpg'
 )
 
 rest8.banner.attach(
-	io: File.open('/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/lombardis/banner1.jpeg'),
+	io: open('https://my-table-pro.s3.amazonaws.com/rest_pics/lombardis/banner1.jpeg'),
 	filename: 'lombardis_banner.jpg'
 )
 
 lombardis = [
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/lombardis/563242-309345872464192-1945172116-n.jpeg',
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/lombardis/7563094100_88d4b8afd2_b.jpeg',
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/lombardis/1522100872504.jpeg',
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/lombardis/banner.jpeg',
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/lombardis/icon.jpeg',
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/lombardis/pizza.jpg',
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/lombardis/lombardis_outside.jpeg'
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/lombardis/563242-309345872464192-1945172116-n.jpeg',
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/lombardis/7563094100_88d4b8afd2_b.jpeg',
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/lombardis/1522100872504.jpeg',
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/lombardis/banner.jpeg',
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/lombardis/icon.jpeg',
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/lombardis/pizza.jpg',
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/lombardis/lombardis_outside.jpeg'
 ]
 
 lombardis.each do |path, i|
-		file = File.open(path)
+		file = open(path)
 		rest8.photos.attach(io: file, filename: "lombardis_#{i}.jpeg")
 end
 
@@ -346,26 +337,26 @@ rest9 = Restaurant.create!(
 
 
 rest9.icon.attach(
-	io: File.open('/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/tavern/icon.jpeg'),
+	io: open('https://my-table-pro.s3.amazonaws.com/rest_pics/tavern/icon.jpeg'),
 	filename: 'tavern_icon.jpg'
 )
 
 rest9.banner.attach(
-	io: File.open('/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/tavern/banner.jpeg'),
+	io: open('https://my-table-pro.s3.amazonaws.com/rest_pics/tavern/banner.jpeg'),
 	filename: 'tavern_banner.jpg'
 )
 
 tavern = [
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/tavern/nice.jpeg',
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/tavern/night.jpeg',
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/tavern/Tavernonthegreen_ext.0.0.jpg',
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/tavern/outside.jpeg',
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/tavern/frontal.jpeg',
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/tavern/reopening.jpeg',
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/tavern/nice.jpeg',
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/tavern/night.jpeg',
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/tavern/Tavernonthegreen_ext.0.0.jpg',
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/tavern/outside.jpeg',
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/tavern/frontal.jpeg',
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/tavern/reopening.jpeg',
 ]
 
 tavern.each do |path, i|
-		file = File.open(path)
+		file = open(path)
 		rest9.photos.attach(io: file, filename: "tavern_#{i}.jpeg")
 end
 
@@ -381,27 +372,27 @@ rest10 = Restaurant.create!(
 )
 
 rest10.icon.attach(
-	io: File.open('/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/rainbow/icon.jpeg'),
+	io: open('https://my-table-pro.s3.amazonaws.com/rest_pics/rainbow/icon.jpeg'),
 	filename: 'rainbow_icon.jpg'
 )
 
 rest10.banner.attach(
-	io: File.open('/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/rainbow/90f0dc119674c958e6c9d533e3e43ec6c81e1588-5120x2724.jpeg'),
+	io: open('https://my-table-pro.s3.amazonaws.com/rest_pics/rainbow/90f0dc119674c958e6c9d533e3e43ec6c81e1588-5120x2724.jpeg'),
 	filename: 'rainbow_banner.jpg'
 )
 
 rainbow = [
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/rainbow/food1.jpeg',
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/rainbow/20141001-RAINBOW-slide-4IWD-superJumbo.jpeg',
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/rainbow/e9c2b329022f89801b0329b3fd8184b55e8a532f-2560x1364.jpeg',
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/rainbow/fc725677d3540e8248f4294de629c2875b55c59c-2560x1364.jpeg',
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/rainbow/food2.jpeg',
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/rainbow/huge.jpeg',
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/rainbow/rainbow.0.0.jpg'
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/rainbow/food1.jpeg',
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/rainbow/20141001-RAINBOW-slide-4IWD-superJumbo.jpeg',
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/rainbow/e9c2b329022f89801b0329b3fd8184b55e8a532f-2560x1364.jpeg',
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/rainbow/fc725677d3540e8248f4294de629c2875b55c59c-2560x1364.jpeg',
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/rainbow/food2.jpeg',
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/rainbow/huge.jpeg',
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/rainbow/rainbow.0.0.jpg'
 ]
 
 rainbow.each do |path, i|
-		file = File.open(path)
+		file = open(path)
 		rest10.photos.attach(io: file, filename: "rainbow_#{i}.jpeg")
 end
 
@@ -417,26 +408,26 @@ rest11 = Restaurant.create!(
 )
 
 rest11.icon.attach(
-	io: File.open('/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/raos/icon.jpeg'),
+	io: open('https://my-table-pro.s3.amazonaws.com/rest_pics/raos/icon.jpeg'),
 	filename: 'raos_icon.jpg'
 )
 
 rest11.banner.attach(
-	io: File.open('/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/raos/raos-harlem-restaurant-01.jpeg'),
+	io: open('https://my-table-pro.s3.amazonaws.com/rest_pics/raos/raos-harlem-restaurant-01.jpeg'),
 	filename: 'raos_banner.jpg'
 )
 
 raos = [
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/raos/meatballs.jpeg',
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/raos/5eb03165cdfd48710d7de033.jpeg',
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/raos/merlin_130224302_f063b138-55d9-4aa3-8f93-196a7becdffc-superJumbo.jpeg',
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/raos/368c4808de687c7426a3801e53cd4817d4-raos-.rsocial.w1200.jpeg',
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/raos/icon.jpeg',
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/raos/raos-harlem-restaurant-01.jpeg'
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/raos/meatballs.jpeg',
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/raos/5eb03165cdfd48710d7de033.jpeg',
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/raos/merlin_130224302_f063b138-55d9-4aa3-8f93-196a7becdffc-superJumbo.jpeg',
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/raos/368c4808de687c7426a3801e53cd4817d4-raos-.rsocial.w1200.jpeg',
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/raos/icon.jpeg',
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/raos/raos-harlem-restaurant-01.jpeg'
 ]
 
 raos.each do |path, i|
-		file = File.open(path)
+		file = open(path)
 		rest11.photos.attach(io: file, filename: "raos_#{i}.jpeg")
 end
 
@@ -455,28 +446,28 @@ rest12 = Restaurant.create!(
 )
 
 rest12.icon.attach(
-	io: File.open('/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/oyster/icon.jpeg'),
+	io: open('https://my-table-pro.s3.amazonaws.com/rest_pics/oyster/icon.jpeg'),
 	filename: 'oyster_icon.jpg'
 )
 
 rest12.banner.attach(
-	io: File.open('/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/oyster/real_banner.jpeg'),
+	io: open('https://my-table-pro.s3.amazonaws.com/rest_pics/oyster/real_banner.jpeg'),
 	filename: 'oyster_banner.jpg'
 )
 
 oyster = [
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/oyster/OysterLunchCounter3.jpeg',
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/oyster/banner.jpeg',
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/oyster/Coleman-Elegy-for-the-Grand-Central-Oyster-Bars-Caviar-Sandwich.jpeg',
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/oyster/Grand-Central-Oyster-Bar-NYC_6_171020120021007-1600x800.jpeg',
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/oyster/OYSTER_BAR_COUNTERS_BEST.jpeg',
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/oyster/barold.jpeg',
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/oyster/banner1.jpeg',
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/oyster/real_banner.jpeg'
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/oyster/OysterLunchCounter3.jpeg',
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/oyster/banner.jpeg',
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/oyster/Coleman-Elegy-for-the-Grand-Central-Oyster-Bars-Caviar-Sandwich.jpeg',
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/oyster/Grand-Central-Oyster-Bar-NYC_6_171020120021007-1600x800.jpeg',
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/oyster/OYSTER_BAR_COUNTERS_BEST.jpeg',
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/oyster/barold.jpeg',
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/oyster/banner1.jpeg',
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/oyster/real_banner.jpeg'
 ]
 
 oyster.each do |path, i|
-		file = File.open(path)
+		file = open(path)
 		rest12.photos.attach(io: file, filename: "oyster_#{i}.jpeg")
 end
 
@@ -492,26 +483,26 @@ rest13 = Restaurant.create!(
 
 
 rest13.icon.attach(
-	io: File.open('/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/brooklyn/icon.jpeg'),
+	io: open('https://my-table-pro.s3.amazonaws.com/rest_pics/brooklyn/icon.jpeg'),
 	filename: 'farmacy_icon.jpg'
 )
 
 rest13.banner.attach(
-	io: File.open('/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/brooklyn/bar.jpeg'),
+	io: open('https://my-table-pro.s3.amazonaws.com/rest_pics/brooklyn/bar.jpeg'),
 	filename: 'farmacy_banner.jpg'
 )
 
 farmacy = [
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/brooklyn/brooklyn_farmacy_07__large.jpeg',
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/brooklyn/food.jpeg',
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/brooklyn/brooklyn-farmacy.jpeg',
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/brooklyn/counter.jpeg',
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/brooklyn/dessert.jpeg',
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/brooklyn/milkshake.jpeg'
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/brooklyn/brooklyn_farmacy_07__large.jpeg',
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/brooklyn/food.jpeg',
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/brooklyn/brooklyn-farmacy.jpeg',
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/brooklyn/counter.jpeg',
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/brooklyn/dessert.jpeg',
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/brooklyn/milkshake.jpeg'
 ]
 
 farmacy.each do |path, i|
-		file = File.open(path)
+		file = open(path)
 		rest13.photos.attach(io: file, filename: "farmacy_#{i}.jpeg")
 end
 
@@ -529,26 +520,26 @@ rest14 = Restaurant.create!(
 
 
 rest14.icon.attach(
-	io: File.open('/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/nathans/icon.jpeg'),
+	io: open('https://my-table-pro.s3.amazonaws.com/rest_pics/nathans/icon.jpeg'),
 	filename: 'nathans_icon.jpg'
 )
 
 rest14.banner.attach(
-	io: File.open('/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/nathans/banner.jpeg'),
+	io: open('https://my-table-pro.s3.amazonaws.com/rest_pics/nathans/banner.jpeg'),
 	filename: 'nathans_banner.jpg'
 )
 
 nathans = [
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/nathans/nathans.jpeg',
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/nathans/24BOOKSHELF-superJumbo.jpeg',
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/nathans/food.jpeg',
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/nathans/five-cent-hot-dogs-return-to-nathans-coney-island-index.jpeg',
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/nathans/download.jpeg',
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/nathans/nathans-coney-island-brooklyn-nyc-4y3a19480-eb73ec375056a36_eb73edb6-5056-a36f-23e0c8a689c2bd07__large.jpeg',
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/nathans/nathans.jpeg',
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/nathans/24BOOKSHELF-superJumbo.jpeg',
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/nathans/food.jpeg',
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/nathans/five-cent-hot-dogs-return-to-nathans-coney-island-index.jpeg',
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/nathans/download.jpeg',
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/nathans/nathans-coney-island-brooklyn-nyc-4y3a19480-eb73ec375056a36_eb73edb6-5056-a36f-23e0c8a689c2bd07__large.jpeg',
 ]
 
 nathans.each do |path, i|
-		file = File.open(path)
+		file = open(path)
 		rest14.photos.attach(io: file, filename: "nathans_#{i}.jpeg")
 end
 
@@ -568,26 +559,26 @@ rest15 = Restaurant.create!(
 
 
 rest15.icon.attach(
-	io: File.open('/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/juniors/icon2.jpeg'),
+	io: open('https://my-table-pro.s3.amazonaws.com/rest_pics/juniors/icon2.jpeg'),
 	filename: 'juniors_icon.jpg'
 )
 
 rest15.banner.attach(
-	io: File.open('/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/juniors/Juniors-2x.jpeg'),
+	io: open('https://my-table-pro.s3.amazonaws.com/rest_pics/juniors/Juniors-2x.jpeg'),
 	filename: 'juniors_banner.jpg'
 )
 
 juniors = [
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/juniors/icon.jpeg',
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/juniors/obama.jpeg',
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/juniors/Juniors-cheesecake-the-best-new-york-cheesecake.jpeg',
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/juniors/juniors-vintage-by-juniors.jpeg',
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/juniors/juniors-4.jpeg',
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/juniors/images.jpeg'
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/juniors/icon.jpeg',
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/juniors/obama.jpeg',
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/juniors/Juniors-cheesecake-the-best-new-york-cheesecake.jpeg',
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/juniors/juniors-vintage-by-juniors.jpeg',
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/juniors/juniors-4.jpeg',
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/juniors/images.jpeg'
 ]
 
 juniors.each do |path, i|
-		file = File.open(path)
+		file = open(path)
 		rest15.photos.attach(io: file, filename: "juniors_#{i}.jpeg")
 end
 
@@ -604,28 +595,28 @@ rest16 = Restaurant.create!(
 )
 
 rest16.icon.attach(
-	io: File.open('/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/benihana/icon.png'),
+	io: open('https://my-table-pro.s3.amazonaws.com/rest_pics/benihana/icon.png'),
 	filename: 'benihana_icon.jpg'
 )
 
 rest16.banner.attach(
-	io: File.open('/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/benihana/banner.jpeg'),
+	io: open('https://my-table-pro.s3.amazonaws.com/rest_pics/benihana/banner.jpeg'),
 	filename: 'benihana_banner.jpg'
 )
 
 benihana = [
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/benihana/interior.jpeg',
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/benihana/maxresdefault.jpeg',
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/benihana/morefood.jpeg',
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/benihana/newyork_newyork.jpeg',
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/benihana/hibachi.jpeg',
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/benihana/Benihana_golden_valley.jpeg',
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/benihana/banner.jpeg',
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/benihana/alaskan_roll-1903x902.jpeg'
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/benihana/interior.jpeg',
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/benihana/maxresdefault.jpeg',
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/benihana/morefood.jpeg',
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/benihana/newyork_newyork.jpeg',
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/benihana/hibachi.jpeg',
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/benihana/Benihana_golden_valley.jpeg',
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/benihana/banner.jpeg',
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/benihana/alaskan_roll-1903x902.jpeg'
 ]
 
 benihana.each do |path, i|
-		file = File.open(path)
+		file = open(path)
 		rest16.photos.attach(io: file, filename: "benihana_#{i}.jpeg")
 end
 
@@ -651,26 +642,26 @@ rest17 = Restaurant.create!(
 
 
 rest17.icon.attach(
-	io: File.open('/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/casa/icon.jpeg'),
+	io: open('https://my-table-pro.s3.amazonaws.com/rest_pics/casa/icon.jpeg'),
 	filename: 'casa_icon.jpg'
 )
 
 rest17.banner.attach(
-	io: File.open('/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/casa/banner.png'),
+	io: open('https://my-table-pro.s3.amazonaws.com/rest_pics/casa/banner.png'),
 	filename: 'casa_banner.jpg'
 )
 
 casa = [
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/casa/Casa_Limone_Margherita_Bolognetta_Pizzas.jpeg',
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/casa/download (1).jpeg',
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/casa/huge.jpeg',
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/casa/huge.jpeg',
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/casa/outside.jpeg',
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/casa/Tavoli-parete-bottiglie-2-1024x684.png'
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/casa/Casa_Limone_Margherita_Bolognetta_Pizzas.jpeg',
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/casa/download (1).jpeg',
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/casa/huge.jpeg',
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/casa/huge.jpeg',
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/casa/outside.jpeg',
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/casa/Tavoli-parete-bottiglie-2-1024x684.png'
 ]
 
 casa.each do |path, i|
-		file = File.open(path)
+		file = open(path)
 		rest17.photos.attach(io: file, filename: "casa_#{i}.jpeg")
 end
 
@@ -695,26 +686,26 @@ rest18 = Restaurant.create!(
 
 
 rest18.icon.attach(
-	io: File.open('/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/nomwah/chinatown-shrimp-snowpea-dumpling.jpeg'),
+	io: open('https://my-table-pro.s3.amazonaws.com/rest_pics/nomwah/chinatown-shrimp-snowpea-dumpling.jpeg'),
 	filename: 'nomwah_icon.jpg'
 )
 
 rest18.banner.attach(
-	io: File.open('/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/nomwah/nom-wah-cookbook-table-setting.jpeg'),
+	io: open('https://my-table-pro.s3.amazonaws.com/rest_pics/nomwah/nom-wah-cookbook-table-setting.jpeg'),
 	filename: 'nomwah_banner.jpg'
 )
 
 nomwah = [
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/nomwah/EmilyS_NYC_NomWahTeaParlor_OutdoorDining.jpeg',
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/nomwah/nom-wah-dim-sum.jpeg',
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/nomwah/Nom-Wah-Tea-Parlor_2018_NOM_WAH_dim_sum_Credit-Paul_Wagtouicz_29.webp',
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/nomwah/nom-wah-tea-parlor-interior-e1539679074411.jpeg',
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/nomwah/IMG_4938.0.jpg',
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/nomwah/image.jpeg'
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/nomwah/EmilyS_NYC_NomWahTeaParlor_OutdoorDining.jpeg',
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/nomwah/nom-wah-dim-sum.jpeg',
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/nomwah/Nom-Wah-Tea-Parlor_2018_NOM_WAH_dim_sum_Credit-Paul_Wagtouicz_29.webp',
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/nomwah/nom-wah-tea-parlor-interior-e1539679074411.jpeg',
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/nomwah/IMG_4938.0.jpg',
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/nomwah/image.jpeg'
 ]
 
 nomwah.each do |path, i|
-		file = File.open(path)
+		file = open(path)
 		rest18.photos.attach(io: file, filename: "nomwah_#{i}.jpeg")
 end
 
@@ -736,26 +727,26 @@ rest19 = Restaurant.create!(
 
 
 rest19.icon.attach(
-	io: File.open('/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/sylvias/chicken.jpeg'),
+	io: open('https://my-table-pro.s3.amazonaws.com/rest_pics/sylvias/chicken.jpeg'),
 	filename: 'sylvias_icon.jpg'
 )
 
 rest19.banner.attach(
-	io: File.open('/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/sylvias/banner.jpeg'),
+	io: open('https://my-table-pro.s3.amazonaws.com/rest_pics/sylvias/banner.jpeg'),
 	filename: 'sylvias_banner.jpg'
 )
 
 sylvias = [
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/sylvias/7CDLJRT5RYSFO2OV4NJSA4EUGE.jpeg',
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/sylvias/SYLVIAS1-superJumbo.jpeg',
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/sylvias/wish-we-had-time-for.jpeg',
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/sylvias/sylvias-restaurant-selected-nov-2015-71_v2-1024x913.jpg.webp',
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/sylvias/smothered-chichen-with.jpeg',
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/sylvias/image.jpeg'
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/sylvias/7CDLJRT5RYSFO2OV4NJSA4EUGE.jpeg',
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/sylvias/SYLVIAS1-superJumbo.jpeg',
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/sylvias/wish-we-had-time-for.jpeg',
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/sylvias/sylvias-restaurant-selected-nov-2015-71_v2-1024x913.jpg.webp',
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/sylvias/smothered-chichen-with.jpeg',
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/sylvias/image.jpeg'
 ]
 
 sylvias.each do |path, i|
-		file = File.open(path)
+		file = open(path)
 		rest19.photos.attach(io: file, filename: "sylvias_#{i}.jpeg")
 end
 
@@ -776,26 +767,26 @@ rest20 = Restaurant.create!(
 )
 
 rest20.icon.attach(
-	io: File.open('/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/punjabi/4296576_iwxoAeIrK-uU2G1_FQsW4vjcfzH5cArv6VGWYxtpDYo.0.0.jpg'),
+	io: open('https://my-table-pro.s3.amazonaws.com/rest_pics/punjabi/4296576_iwxoAeIrK-uU2G1_FQsW4vjcfzH5cArv6VGWYxtpDYo.0.0.jpg'),
 	filename: 'punjabi_icon.jpg'
 )
 
 rest20.banner.attach(
-	io: File.open('/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/punjabi/banner.jpeg'),
+	io: open('https://my-table-pro.s3.amazonaws.com/rest_pics/punjabi/banner.jpeg'),
 	filename: 'punjabi_banner.jpg'
 )
 
 punjabi = [
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/punjabi/punjabi.jpeg',
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/punjabi/hcmp39629_653937.jpeg',
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/punjabi/DSCN2063.jpeg',
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/punjabi/download.jpeg',
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/punjabi/20190107-DSC_9782.jpeg',
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/punjabi/1203-Adidas-3.webp'
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/punjabi/punjabi.jpeg',
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/punjabi/hcmp39629_653937.jpeg',
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/punjabi/DSCN2063.jpeg',
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/punjabi/download.jpeg',
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/punjabi/20190107-DSC_9782.jpeg',
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/punjabi/1203-Adidas-3.webp'
 ]
 
 punjabi.each do |path, i|
-		file = File.open(path)
+		file = open(path)
 		rest20.photos.attach(io: file, filename: "punjabi_#{i}.jpeg")
 end
 
@@ -821,26 +812,26 @@ rest21 = Restaurant.create!(
 )
 
 rest21.icon.attach(
-	io: File.open('/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/bernardin/LaBernadin-WORLD-2019-DISH1-min.jpeg'),
+	io: open('https://my-table-pro.s3.amazonaws.com/rest_pics/bernardin/LaBernadin-WORLD-2019-DISH1-min.jpeg'),
 	filename: 'bernardin_icon.jpg'
 )
 
 rest21.banner.attach(
-	io: File.open('/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/bernardin/banner.jpeg'),
+	io: open('https://my-table-pro.s3.amazonaws.com/rest_pics/bernardin/banner.jpeg'),
 	filename: 'bernardin_banner.jpg'
 )
 
 bernardin = [
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/bernardin/5251f98eeab8eac7683a7ba2.webp',
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/bernardin/9346e13cbdc7e123a5badba67d210de1.jpeg',
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/bernardin/bernardin1_083121_1600.jpeg',
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/bernardin/lb-gallery-food-wagyu-tartare-2.jpeg',
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/bernardin/merlin_137960982_2751e315-69fb-4155-8c7f-1fecf2d8c531-superJumbo.jpeg',
-	'/Users/Will2/Desktop/myTable/app/assets/images/rest_pics/bernardin/lobster-on-a-bed-of-truffled.jpeg'
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/bernardin/5251f98eeab8eac7683a7ba2.webp',
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/bernardin/9346e13cbdc7e123a5badba67d210de1.jpeg',
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/bernardin/bernardin1_083121_1600.jpeg',
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/bernardin/lb-gallery-food-wagyu-tartare-2.jpeg',
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/bernardin/merlin_137960982_2751e315-69fb-4155-8c7f-1fecf2d8c531-superJumbo.jpeg',
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/bernardin/lobster-on-a-bed-of-truffled.jpeg'
 ]
 
 bernardin.each do |path, i|
-		file = File.open(path)
+		file = open(path)
 		rest21.photos.attach(io: file, filename: "bernardin_#{i}.jpeg")
 end
 
