@@ -41,6 +41,10 @@ Rails.application.configure do
   # Store uploaded files on the local file system (see config/storage.yml for options)
   config.active_storage.service = :amazon_prod
 
+  ## setting secret_key_base due to errors received:
+  #### => "Missing `secret_key_base` for 'production' environment"
+  config.secret_key_base = '<%= ENV["SECRET_KEY_BASE"] %>'
+
   # Mount Action Cable outside main process or domain
   # config.action_cable.mount_path = nil
   # config.action_cable.url = 'wss://example.com/cable'
