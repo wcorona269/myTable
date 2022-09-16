@@ -7,6 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 require 'faker'
+require 'open-uri'
 
 #destroy all data before seeding
 User.destroy_all
@@ -64,16 +65,16 @@ rest1 = Restaurant.create!(
 # ]
 
 hearthpics = [
-	ActionController::Base.helpers.image_path('images/rest_pics/hearth/26504710.jpg'),
-	ActionController::Base.helpers.image_path('images/rest_pics/hearth/banner.png'),
-	ActionController::Base.helpers.image_path('images/rest_pics/hearth/26504732.jpg'),
-	ActionController::Base.helpers.image_path('images/rest_pics/hearth/26504723.jpg'),
-	ActionController::Base.helpers.image_path('images/rest_pics/hearth/26504722.jpg'),
-	ActionController::Base.helpers.image_path('images/rest_pics/hearth/26504715.jpg')
+	'images/rest_pics/hearth/26504710.jpg'),
+	'images/rest_pics/hearth/banner.png'),
+	'images/rest_pics/hearth/26504732.jpg'),
+	'images/rest_pics/hearth/26504723.jpg'),
+	'images/rest_pics/hearth/26504722.jpg'),
+	'images/rest_pics/hearth/26504715.jpg')
 ]
 
 hearthpics.each do |path, i|
-		file = File.open(path)
+		file = open(path)
 		rest1.photos.attach(io: file, filename:"hearth_#{i}.jpeg")
 end
 
