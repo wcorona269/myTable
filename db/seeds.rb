@@ -17,23 +17,23 @@ Booking.destroy_all
 Favorite.destroy_all
 
 # users
-user1 = User.create(fname: "Food", lname: "Enjoyer", dname: "foodenjoyer", password: "ilovefood", email: "foodenjoyer@foodnetwork.com", phone: 2032550021)
-user2 = User.create(fname: "Guest", lname: "User", dname: "guest", password: "guest", email: "guest@mytable.com", phone: 1234567890)
-user3 = User.create(fname: "Will", lname: "Corona", dname: "willcorona", password: "willyc", email: "wcorona269@gmail.com", phone: 2039138354)
-user4 = User.create(fname: "Veronica", lname: "Theobald", dname: "ronigirl99", password: "randolph", email: "veronica@ron.com", phone: 4444444444)
-user5 = User.create(fname: "Kyle", lname: "Ginzburg", dname: "kylekyle", password: "iamkyle", email: "kyle@kyle.com", phone: 5555555555)
-user6 = User.create(fname: "Amin", lname: "Babar", dname: "aminbabar", password: "iamamin", email: "amin@amin.com", phone: 6666666666)
-user7 = User.create(fname: "Jim", lname: "Nardi", dname: "jimnardi", password: "iamjimmy", email: "jim@jim.com", phone: 7777777777)
+user1 = User.create!(fname: "Food", lname: "Enjoyer", dname: "foodenjoyer", password: "ilovefood", email: "foodenjoyer@foodnetwork.com", phone: 2032550021)
+user2 = User.create!(fname: "Guest", lname: "User", dname: "guest", password: "guestuser ", email: "guest@mytable.com", phone: 1234567890)
+user3 = User.create!(fname: "Will", lname: "Corona", dname: "willcorona", password: "willyc", email: "wcorona269@gmail.com", phone: 2039138354)
+user4 = User.create!(fname: "Veronica", lname: "Theobald", dname: "ronigirl99", password: "randolph", email: "veronica@ron.com", phone: 4444444444)
+user5 = User.create!(fname: "Kyle", lname: "Ginzburg", dname: "kylekyle", password: "iamkyle", email: "kyle@kyle.com", phone: 5555555555)
+user6 = User.create!(fname: "Amin", lname: "Babar", dname: "aminbabar", password: "iamamin", email: "amin@amin.com", phone: 6666666666)
+user7 = User.create!(fname: "Jim", lname: "Nardi", dname: "jimnardi", password: "iamjimmy", email: "jim@jim.com", phone: 7777777777)
 
 
-30.times do 
-	User.create(
+30.times do
+	User.create!(
 		fname: Faker::Name.unique.first_name,
 		lname: Faker::Name.unique.last_name,
 		dname: Faker::Internet.unique.username(specifier: 6),
 		password: "fakeuser",
 		email: Faker::Internet.unique.email,
-		phone: rand(9999999999)
+		phone: rand(100000000..9999999999)
 	)
 end
 
@@ -47,6 +47,7 @@ rest1 = Restaurant.create!(
 	address: "403 East 12 Street New York, NY 10009",
 	phone: 6466021300
 )
+
 
 rest1.icon.attach(io: open('https://my-table-pro.s3.amazonaws.com/rest_pics/hearth/banner.png'), filename: 'hearth-icon.jpg')
 
@@ -238,7 +239,7 @@ rest6.banner.attach(
 )
 
 patsys = [
-	'https://my-table-pro.s3.amazonaws.com/rest_pics/patsys/02 INT.jpg',
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/patsys/02+INT.jpg',
 	'https://my-table-pro.s3.amazonaws.com/rest_pics/patsys/9869150afe394e64ab82fb628e9c7c5d.jpg',
 	'https://my-table-pro.s3.amazonaws.com/rest_pics/patsys/icon.jpg',
 	'https://my-table-pro.s3.amazonaws.com/rest_pics/patsys/IMG_0836.jpg',
@@ -620,11 +621,6 @@ benihana.each do |path, i|
 		rest16.photos.attach(io: file, filename: "benihana_#{i}.jpeg")
 end
 
-
-
-
-
-
 rest17 = Restaurant.create!(
 	name: "Casa Limone",
 	description: "Casa Limone offers all weekdays an Executive Lunch Menu for $35 and a Pre-Theatre Dinner menu for $45.
@@ -653,7 +649,7 @@ rest17.banner.attach(
 
 casa = [
 	'https://my-table-pro.s3.amazonaws.com/rest_pics/casa/Casa_Limone_Margherita_Bolognetta_Pizzas.jpeg',
-	'https://my-table-pro.s3.amazonaws.com/rest_pics/casa/download (1).jpeg',
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/casa/download+(1).jpeg',
 	'https://my-table-pro.s3.amazonaws.com/rest_pics/casa/huge.jpeg',
 	'https://my-table-pro.s3.amazonaws.com/rest_pics/casa/huge.jpeg',
 	'https://my-table-pro.s3.amazonaws.com/rest_pics/casa/outside.jpeg',
@@ -664,9 +660,6 @@ casa.each do |path, i|
 		file = open(path)
 		rest17.photos.attach(io: file, filename: "casa_#{i}.jpeg")
 end
-
-
-
 
 
 rest18 = Restaurant.create!(
@@ -708,9 +701,6 @@ nomwah.each do |path, i|
 		file = open(path)
 		rest18.photos.attach(io: file, filename: "nomwah_#{i}.jpeg")
 end
-
-
-
 
 
 rest19 = Restaurant.create!(
@@ -836,16 +826,10 @@ bernardin.each do |path, i|
 end
 
 
-
-
-
-
-
-
 # rest1 reviews
 Review.create!(
 	body: "The food was great but the serving sizes were tiny! If I'm going out for Italian food I want a feast! Overall a great restaurant but a little too 'hip' for me", 
-	author_id: user1.id, 
+	author_id: user1.id,
 	rest_id: rest1.id, 
 	food: 4, 
 	service: 5, 
@@ -1034,37 +1018,3 @@ end
 		rest_id: rand(15..21)
 	)
 end
-
-
-
-# file3 = open('https://openspot-seeds.s3.amazonaws.com/angel-indian-thumbnail.jpg')
-# rest3.photos.attach(io: file3, filename: 'angel_thumbnail.jpg')
-
-# file3a = open('https://openspot-seeds.s3.amazonaws.com/header/angel-indian-James-Park-Eater-NY.jpg')
-# rest3.photos.attach(io: file3a, filename: 'angel_header.jpg')
-
-# file3b = open('https://openspot-seeds.s3.amazonaws.com/search-thumbnail/angel-indian-James-Park-Eater-NY-2.jpg')
-# rest3.photos.attach(io: file3b, filename: 'angel_sheader.jpg')
-
-# GamePlace.all.each do |gp, i|
-# 	file = open(avatars.sample)
-# 	gp.avatar.attach(io: file, filename: "#{i}_avatar.jpeg")
-# end
-
-# GamePlace.all.each do |gp, i|
-# 	file = open(headers.sample)
-# 	gp.photo.attach(io: file, filename: "#{i}_header.jpeg")
-# end
-
-# GamePlace.all.each do |gp, j|
-# 	gp_pics = []
-
-# 	9.times do |i|
-# 			gp_pics << gallery_images.sample
-# 	end
-	
-# 	gp_pics.each do |path, i|
-# 			file = open(path)
-# 			gp.pictures.attach(io: file, filename: "img_#{j}_#{i}.jpeg")
-# 	end
-# end
