@@ -924,8 +924,8 @@ good_reviews = [
 250.times do
 	Review.create!(
 		body: good_reviews.sample,
-		author_id: rand(1..30),
-		rest_id: rand(1..21), 
+		author_id: rand(1..User.all.length),
+		rest_id: rand(1..Restaurant.all.length),
 		food: rand(4..5),
 		service: rand(4..5),
 		ambience: rand(4..5),
@@ -936,7 +936,7 @@ end
 150.times do
 	Review.create!(
 		body: good_reviews.sample,
-		author_id: rand(1..30),
+		author_id: rand(1..User.all.length),
 		rest_id: rand(1..21), 
 		food: rand(4..5),
 		service: rand(4..5),
@@ -949,8 +949,8 @@ end
 95.times do
 	Review.create!(
 		body: bad_reviews.sample,
-		author_id: rand(1..30),
-		rest_id: rand(1..21), 
+		author_id: rand(1..User.all.length),
+		rest_id: rand(1..Restaurant.all.length), 
 		food: rand(1..3),
 		service: rand(1..3),
 		ambience: rand(1..3),
@@ -958,7 +958,7 @@ end
 	)
 end
 
-(1..21).each do |idx|
+(1..Restaurant.all.length).each do |idx|
 	6.times do
 		MenuItem.create!(
 			rest_id: idx,
