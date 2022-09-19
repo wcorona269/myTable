@@ -41,6 +41,17 @@ Rails.application.configure do
   # Store uploaded files on the local file system (see config/storage.yml for options)
   config.active_storage.service = :amazon_prod
 
+  # Allow various image types to be processed
+  config.active_storage.variable_content_types = %w(
+    image/png
+    image/gif
+    image/jpg
+    image/jpeg
+    image/webp
+    image/vnd.adobe.photoshop
+    image/vnd.microsoft.icon
+  )
+
   ## setting secret_key_base due to errors received:
   #### => "Missing `secret_key_base` for 'production' environment"
   config.secret_key_base = '<%= ENV["SECRET_KEY_BASE"] %>'

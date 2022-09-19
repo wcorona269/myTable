@@ -48,7 +48,6 @@ rest1 = Restaurant.create!(
 	phone: 6466021300
 )
 
-
 rest1.icon.attach(io: open('https://my-table-pro.s3.amazonaws.com/rest_pics/hearth/banner.png'), filename: 'hearth-icon.jpg')
 
 rest1.banner.attach(
@@ -197,7 +196,8 @@ rest5 = Restaurant.create!(
 
 rest5.icon.attach(
 	io: open('https://my-table-pro.s3.amazonaws.com/rest_pics/lugers/icon.jpg'),
-	filename: 'lugers-icon.jpg')
+	filename: 'lugers-icon.jpg'
+)
 
 rest5.banner.attach(
 	io: open('https://my-table-pro.s3.amazonaws.com/rest_pics/lugers/banner.jpg'),
@@ -251,9 +251,6 @@ patsys.each do |path, i|
 		file = open(path)
 		rest6.photos.attach(io: file, filename: "patsys_#{i}.jpeg")
 end
-
-
-
 
 rest7 = Restaurant.create!(
 	name: "Katz's Delicatessen",
