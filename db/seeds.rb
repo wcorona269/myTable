@@ -239,7 +239,7 @@ rest6.banner.attach(
 )
 
 patsys = [
-	'https://my-table-pro.s3.amazonaws.com/rest_pics/patsys/02+INT.jpg',
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/patsys/02%2BINT.jpg',
 	'https://my-table-pro.s3.amazonaws.com/rest_pics/patsys/9869150afe394e64ab82fb628e9c7c5d.jpg',
 	'https://my-table-pro.s3.amazonaws.com/rest_pics/patsys/icon.jpg',
 	'https://my-table-pro.s3.amazonaws.com/rest_pics/patsys/IMG_0836.jpg',
