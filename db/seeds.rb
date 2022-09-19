@@ -691,7 +691,7 @@ rest18.banner.attach(
 nomwah = [
 	'https://my-table-pro.s3.amazonaws.com/rest_pics/nomwah/EmilyS_NYC_NomWahTeaParlor_OutdoorDining.jpeg',
 	'https://my-table-pro.s3.amazonaws.com/rest_pics/nomwah/nom-wah-dim-sum.jpeg',
-	'https://my-table-pro.s3.amazonaws.com/rest_pics/nomwah/Nom-Wah-Tea-Parlor_2018_NOM_WAH_dim_sum_Credit-Paul_Wagtouicz_29.webp',
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/nomwah/Nom-Wah-Tea-Parlor_2018_NOM_WAH_dim_sum_Credit-Paul_Wagtouicz_29.jpeg',
 	'https://my-table-pro.s3.amazonaws.com/rest_pics/nomwah/nom-wah-tea-parlor-interior-e1539679074411.jpeg',
 	'https://my-table-pro.s3.amazonaws.com/rest_pics/nomwah/IMG_4938.0.jpg',
 	'https://my-table-pro.s3.amazonaws.com/rest_pics/nomwah/image.jpeg'
@@ -730,7 +730,7 @@ sylvias = [
 	'https://my-table-pro.s3.amazonaws.com/rest_pics/sylvias/7CDLJRT5RYSFO2OV4NJSA4EUGE.jpeg',
 	'https://my-table-pro.s3.amazonaws.com/rest_pics/sylvias/SYLVIAS1-superJumbo.jpeg',
 	'https://my-table-pro.s3.amazonaws.com/rest_pics/sylvias/wish-we-had-time-for.jpeg',
-	'https://my-table-pro.s3.amazonaws.com/rest_pics/sylvias/sylvias-restaurant-selected-nov-2015-71_v2-1024x913.jpg.webp',
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/sylvias/sylvias-restaurant-selected-nov-2015-71_v2-1024x913.jpg',
 	'https://my-table-pro.s3.amazonaws.com/rest_pics/sylvias/smothered-chichen-with.jpeg',
 	'https://my-table-pro.s3.amazonaws.com/rest_pics/sylvias/image.jpeg'
 ]
@@ -772,7 +772,7 @@ punjabi = [
 	'https://my-table-pro.s3.amazonaws.com/rest_pics/punjabi/DSCN2063.jpeg',
 	'https://my-table-pro.s3.amazonaws.com/rest_pics/punjabi/download.jpeg',
 	'https://my-table-pro.s3.amazonaws.com/rest_pics/punjabi/20190107-DSC_9782.jpeg',
-	'https://my-table-pro.s3.amazonaws.com/rest_pics/punjabi/1203-Adidas-3.webp'
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/punjabi/1203-Adidas-3.jpeg'
 ]
 
 punjabi.each do |path, i|
@@ -812,7 +812,7 @@ rest21.banner.attach(
 )
 
 bernardin = [
-	'https://my-table-pro.s3.amazonaws.com/rest_pics/bernardin/5251f98eeab8eac7683a7ba2.webp',
+	'https://my-table-pro.s3.amazonaws.com/rest_pics/bernardin/5251f98eeab8eac7683a7ba2.jpeg',
 	'https://my-table-pro.s3.amazonaws.com/rest_pics/bernardin/9346e13cbdc7e123a5badba67d210de1.jpeg',
 	'https://my-table-pro.s3.amazonaws.com/rest_pics/bernardin/bernardin1_083121_1600.jpeg',
 	'https://my-table-pro.s3.amazonaws.com/rest_pics/bernardin/lb-gallery-food-wagyu-tartare-2.jpeg',
