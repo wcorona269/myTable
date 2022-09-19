@@ -921,11 +921,14 @@ good_reviews = [
 	"Take your time while you're there and enjoy it. This place is legendary for a reason"
 ]
 
+user_ids = (1..User.all.length).map { |i| i }
+rest_ids = (1..Restaurant.all.length).map { |i| i }
+
 250.times do
 	Review.create!(
 		body: good_reviews.sample,
-		author_id: rand(1..User.all.length),
-		rest_id: rand(1..Restaurant.all.length),
+		author_id: user_ids.sample,
+		rest_id: rest_ids.sample,
 		food: rand(4..5),
 		service: rand(4..5),
 		ambience: rand(4..5),
@@ -936,8 +939,8 @@ end
 150.times do
 	Review.create!(
 		body: good_reviews.sample,
-		author_id: rand(1..User.all.length),
-		rest_id: rand(1..21), 
+		author_id: user_ids.sample,
+		rest_id: rest_ids.sample, 
 		food: rand(4..5),
 		service: rand(4..5),
 		ambience: rand(4..5),
@@ -949,8 +952,8 @@ end
 95.times do
 	Review.create!(
 		body: bad_reviews.sample,
-		author_id: rand(1..User.all.length),
-		rest_id: rand(1..Restaurant.all.length), 
+		author_id: user_ids.sample,
+		rest_id: rest_ids.sample, 
 		food: rand(1..3),
 		service: rand(1..3),
 		ambience: rand(1..3),
@@ -995,7 +998,7 @@ times = [
 		Booking.create!(
 			date: dates.sample,
 			time: times.sample,
-			rest_id: rand(1..21),
+			rest_id: rest_ids.sample,
 			user_id: idx,
 			party_size: rand(1..20),
 			cancelled: false
@@ -1003,17 +1006,21 @@ times = [
 	end
 end
 
+first = (1..7).map { |i| i }
+second = (8..14).map { |i| i }
+third = (15..21).map { |i| i }
+
 (1..10).each do |idx|
 	Favorite.create!(
 		user_id: idx,
-		rest_id: rand(1..7)
+		rest_id: first
 	)
 	Favorite.create!(
 		user_id: idx,
-		rest_id: rand(8..14)
+		rest_id: second
 	)
 	Favorite.create!(
 		user_id: idx,
-		rest_id: rand(15..21)
+		rest_id: third
 	)
 end
