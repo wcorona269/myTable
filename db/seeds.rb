@@ -808,6 +808,8 @@ rest21.banner.attach(
 	filename: 'bernardin_banner.jpg'
 )
 
+# updated AWS to include all bernardin photos
+
 bernardin = [
 	'https://my-table-pro.s3.amazonaws.com/rest_pics/bernardin/5251f98eeab8eac7683a7ba2.jpeg',
 	'https://my-table-pro.s3.amazonaws.com/rest_pics/bernardin/9346e13cbdc7e123a5badba67d210de1.jpeg',
