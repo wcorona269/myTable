@@ -10,6 +10,7 @@ class Api::MenuItemsController < ApplicationController
 		
 		if @menu_item.save
 			render :show
+		end
 	end
 
 	def show
