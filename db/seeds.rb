@@ -921,8 +921,8 @@ good_reviews = [
 	"Take your time while you're there and enjoy it. This place is legendary for a reason"
 ]
 
-user_ids = (1..User.all.length).map { |i| i }
-rest_ids = (1..Restaurant.all.length).map { |i| i }
+user_ids = User.all.map {|user| user.id}
+rest_ids = Restaurant.all.map {|rest| rest.id}
 
 250.times do
 	Review.create!(
