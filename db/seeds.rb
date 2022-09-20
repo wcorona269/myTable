@@ -961,10 +961,10 @@ end
 	)
 end
 
-(1..Restaurant.all.length).each do |idx|
+(Restaurant.all).each do |rest|
 	6.times do
 		MenuItem.create!(
-			rest_id: idx,
+			rest_id: rest.id,
 			item: [
 				Faker::Food.dish,
 				Faker::Food.description,
@@ -1006,21 +1006,23 @@ times = [
 	end
 end
 
-first = (1..7).map { |i| i }
-second = (8..14).map { |i| i }
-third = (15..21).map { |i| i }
+
+
+first = (0..6).map { |i| i }
+second = (7..13).map { |i| i }
+third = (14..20).map { |i| i }
 
 (1..10).each do |idx|
 	Favorite.create!(
 		user_id: idx,
-		rest_id: first
+		rest_id: rest_ids[first.sample]
 	)
 	Favorite.create!(
 		user_id: idx,
-		rest_id: second
+		rest_id: rest_ids[second.sample]
 	)
 	Favorite.create!(
 		user_id: idx,
-		rest_id: third
+		rest_id: rest_ids[third.sample]
 	)
 end
