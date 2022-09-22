@@ -84,7 +84,7 @@ const SignupFormContainer = () => {
   const handleDemoSubmit = (e) => {
     e.preventDefault();
     let demoUser = {
-      email: 'guest@mytable.com',
+      email: 'guest@nytable.com',
       password: 'guestuser'
     }
 

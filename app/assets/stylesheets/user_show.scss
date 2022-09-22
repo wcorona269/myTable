@@ -475,11 +475,10 @@ font-weight: 700;
 }
 
 #no-content-message {
-	background-color: #fff;
+	background-color: #fff !important;
 	background: none;
 	padding: 2rem;
 	border-radius: 5px;
-	background: #fff;
 
 	span {
 		font-family: BrandonText,"Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -490,7 +489,6 @@ font-weight: 700;
     line-height: 1;
     position: relative;
     cursor: default;
-    background: #f7f7f7;
     -webkit-font-smoothing: antialiased;
 	}
 }

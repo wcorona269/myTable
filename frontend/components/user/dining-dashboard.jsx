@@ -27,7 +27,7 @@ const UserDiningDashboard = (props) => {
 		let bookingDate = new Date(parts);
 		let now = new Date()
 		bookingDate.setHours(23, 59, 59, 998);
-		bookingDate > today ? upcoming.push(booking) : past.push(booking)
+		(bookingDate > today && !booking.cancelled) ? upcoming.push(booking) : past.push(booking)
 	})
 	
 	return (
