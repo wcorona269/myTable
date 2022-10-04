@@ -30,9 +30,11 @@ Users can visit their user show page and see upcoming reservations.
 Allows users to see the all information relevant to a restaurant, as well as saving and booking restaurants.
 ### Left column
 Left column displays restaurant overview including descriptions, photo gallery, menu and reviews. Users can find necessary information for their booking to see if it fits their ideal criteria.
+
 ![](https://github.com/wcorona269/NY-Table/blob/main/app/assets/images/gifs/left_col.gif)
 ### Right column
 The right column allows users to create bookings and see further information about the restaurant, including delivery and takeout.
+
 ![](https://github.com/wcorona269/NY-Table/blob/main/app/assets/images/gifs/right_col.gif)
 
 ## User show page
@@ -40,9 +42,11 @@ The right column allows users to create bookings and see further information abo
 Show user reservation log, separated by 'upcoming' and 'past' reservations. Users also have the option to modify or delete upcoming reservations, as well as to re-book past reservations.
 ### Saved restaurants
 Allow users to look over saved restaurants, to un-save them and to book reservations at the listed restaurants.
+
 ![](https://github.com/wcorona269/NY-Table/blob/main/app/assets/images/gifs/user_show.gif)
 ### About me
 Allow users to edit their profile information, and to update their profile information if desired.
+
 ![](https://github.com/wcorona269/NY-Table/blob/main/app/assets/images/gifs/password.gif)
 ## Search functionality
 ### Search bar
@@ -54,9 +58,11 @@ Users are also able to specify date, time, and party size for their reservations
 
 ### Search filters
 Filter search results based on cuisine type or price range
+
 ![](https://github.com/wcorona269/NY-Table/blob/main/app/assets/images/gifs/search.gif)
 
 ## Bookings
 ### Modify and cancel
 Users can modify or delete bookings and will immediately see changed reflected in their user show pages and in the booking show page.
+
 ![](https://github.com/wcorona269/NY-Table/blob/main/app/assets/images/gifs/booking.gif)
