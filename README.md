@@ -13,10 +13,12 @@ NY Table is a full stack clone of the popular restaurant booking application, Op
 - Hosting: Heroku
 - Other assets used: Google Maps API, [OTKit Style Guide](https://opentable.github.io/design-tokens/)
 
+
 ## Splash Page
 Splash page scrollbars will display a search bar with lists restaurants available for booking below. Users can click on a restaurant to visit the restaurant's "show" page.
 
 ![](https://github.com/wcorona269/NY-Table/blob/main/app/assets/images/gifs/splash.gif)
+
 
 ## User authentication
 ### When logged out
@@ -25,6 +27,7 @@ Users have two buttons in the top-right of the display allowing them to sign up,
 Users can visit their user show page and see upcoming reservations.
 
 ![](https://github.com/wcorona269/NY-Table/blob/main/app/assets/images/gifs/auth.gif)
+
 
 ## Restaurant show page
 Allows users to see the all information relevant to a restaurant, as well as saving and booking restaurants.
@@ -37,6 +40,7 @@ The right column allows users to create bookings and see further information abo
 
 ![](https://github.com/wcorona269/NY-Table/blob/main/app/assets/images/gifs/right_col.gif)
 
+
 ## User show page
 ### Dining dashboard
 Show user reservation log, separated by 'upcoming' and 'past' reservations. Users also have the option to modify or delete upcoming reservations, as well as to re-book past reservations.
@@ -44,22 +48,20 @@ Show user reservation log, separated by 'upcoming' and 'past' reservations. User
 Allow users to look over saved restaurants, to un-save them and to book reservations at the listed restaurants.
 
 ![](https://github.com/wcorona269/NY-Table/blob/main/app/assets/images/gifs/user_show.gif)
+
+
 ### About me
 Allow users to edit their profile information, and to update their profile information if desired.
 
 ![](https://github.com/wcorona269/NY-Table/blob/main/app/assets/images/gifs/password.gif)
+
+
 ## Search functionality
 ### Search bar
-Allow users to search for restaurants based on various criteria such as:
-- name
-- cuisine type
-- neighborhood
-Users are also able to specify date, time, and party size for their reservations upon searching
-
-### Search filters
-Filter search results based on cuisine type or price range
+Allow users to search for restaurants based on various criteria such as name, cuisine type, neighborhood. Users are also able to specify date, time, and party size for their reservations upon searching. Users can also Filter search results based on cuisine type or price range
 
 ![](https://github.com/wcorona269/NY-Table/blob/main/app/assets/images/gifs/search.gif)
+
 
 ## Bookings
 ### Modify and cancel
