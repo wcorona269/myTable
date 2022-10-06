@@ -24,6 +24,9 @@ const Footer = () => {
 							<li><a href="https://angel.co/u/william-corona-2" target="_blank">
 								<i className="fa-brands fa-angellist"></i>
 								AngelList</a></li>
+							<li><a href="https://will-corona.info" target="_blank">
+							<i className="fa-solid fa-user"></i>
+								Personal Site</a></li>
 						</div>
 					</div>
 
@@ -59,8 +62,8 @@ const Footer = () => {
 							More Projects
 						</div>
 						<div>
-							<li><a href="https://github.com/wcorona269/LitterBug" target="_blank">Litterbug</a></li>
-							<li><a href="https://github.com/jacksondooley/InDevView" target='_blank'>InDevView</a></li>
+							<li><a href="https://wcorona269.github.io/LitterBug/" target="_blank">Litterbug</a></li>
+							<li><a href="https://indevview.herokuapp.com/" target='_blank'>InDevView</a></li>
 						</div>
 					</div>
 				</div>
