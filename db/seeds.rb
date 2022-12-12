@@ -993,7 +993,7 @@ times = [
 	"17:15"
 ]
 
-(1..5).each do |idx|
+user_ids.each do |idx|
 	3.times do
 		Booking.create!(
 			date: dates.sample,
@@ -1012,17 +1012,17 @@ first = (0..6).map { |i| i }
 second = (7..13).map { |i| i }
 third = (14..20).map { |i| i }
 
-(1..5).each do |idx|
+user_ids.each do |user_id|
 	Favorite.create!(
-		user_id: idx,
+		user_id: user_id,
 		rest_id: rest_ids[first.sample]
 	)
 	Favorite.create!(
-		user_id: idx,
+		user_id: user_id,
 		rest_id: rest_ids[second.sample]
 	)
 	Favorite.create!(
-		user_id: idx,
+		user_id: user_id,
 		rest_id: rest_ids[third.sample]
 	)
 end
