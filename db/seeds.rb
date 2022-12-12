@@ -1012,7 +1012,7 @@ first = (0..6).map { |i| i }
 second = (7..13).map { |i| i }
 third = (14..20).map { |i| i }
 
-(1..10).each do |idx|
+(1..5).each do |idx|
 	Favorite.create!(
 		user_id: idx,
 		rest_id: rest_ids[first.sample]
