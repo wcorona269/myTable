@@ -41,6 +41,7 @@ gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 
 # Use ActiveStorage variant
 gem 'mini_magick', '~> 4.8'
+# gem 'imagemagick
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
