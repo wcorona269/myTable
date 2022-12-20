@@ -27,7 +27,7 @@ const AbtDropdown = ({abtDropdown}) => {
 			<div id="abt-drop" className='user-dropdown-ul' onMouseLeave={hideMenu}>
 				<div id="abt-drop-title" className="dropdown-title">About this project</div>
 				<div className="abt-drop-info-container">
-					My name is William Corona and I am a graduate of the full-stack software engineering program at <p className="red-text">App Academy.</p>
+					My name is Will Corona and I am a graduate of the full-stack software engineering program at <p className="red-text">App Academy.</p>
 					<br />
 					<p className="red-text">NY Table</p> is an online web application for booking restaurant reservations in NYC. It is inspired by and modeled after <p className="red-text">OpenTable</p>.
 					<br />

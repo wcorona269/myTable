@@ -18,7 +18,7 @@ Favorite.destroy_all
 
 # users
 user1 = User.create!(fname: "Food", lname: "Enjoyer", dname: "foodenjoyer", password: "ilovefood", email: "foodenjoyer@foodnetwork.com", phone: 2032550021)
-user2 = User.create!(fname: "Guest", lname: "User", dname: "guest", password: "guestuser ", email: "guest@nytable.com", phone: 1234567890)
+user2 = User.create!(fname: "Guest", lname: "User", dname: "guest", password: "guestuser", email: "guest@nytable.com", phone: 1234567890)
 user3 = User.create!(fname: "Will", lname: "Corona", dname: "willcorona", password: "willyc", email: "wcorona269@gmail.com", phone: 2039138354)
 user4 = User.create!(fname: "Veronica", lname: "Theobald", dname: "ronigirl99", password: "randolph", email: "veronica@ron.com", phone: 4444444444)
 user5 = User.create!(fname: "Kyle", lname: "Ginzburg", dname: "kylekyle", password: "iamkyle", email: "kyle@kyle.com", phone: 5555555555)

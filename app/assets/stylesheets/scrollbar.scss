@@ -170,11 +170,21 @@ scrollbar-li:hover {
 	background-color: white;
 	border: 1px solid rgba(148, 147, 147, 0.639);
 	box-shadow: 0 0 5px silver;
-	background-position: center;
+	background-position: center !important;
 	background-repeat: no-repeat;
-	background-size: 13px;
+	background-size: 100%;
 	z-index: 2;
 	position: absolute;
+	
+	:active {
+		transform: translateY(4px)
+	}
+
+	i {
+		position: relative;
+		margin: auto;
+		z-index: 1;
+	}
 }
 
 .left-scroll-button {
@@ -187,6 +197,7 @@ scrollbar-li:hover {
 .right-scroll-button {
 	@extend %scroll-button;
 	right: 0;
+	margin: auto;
 	margin-right: -25px;
 }
 
